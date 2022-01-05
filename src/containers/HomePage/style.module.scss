@@ -1,0 +1,61 @@
+.goodsList {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-top: 100px;
+
+    .itemCard {
+        width: 300px;
+        height: 350px;
+        margin: 20px 30px;
+        border: 1px solid rgb(234, 234, 235);
+        padding: 10px;
+        box-shadow: 2px 6px 6px 4px rgba(34, 60, 80, 0.11);
+
+        h3 {
+            margin: 0;
+        }
+
+        .titleCard {
+            height: 65px;
+        }
+
+        .imageCard {
+            height: 200px;
+
+            img {
+                width: 100px;
+                padding: 15% 0;
+                margin: 0 30%;
+            }
+        }
+
+        .priceCard {
+            margin: 5px 0;
+        }
+
+        .buyNav {
+            display: flex;
+            justify-content:space-between;
+            width: 150px;
+
+            .buyBtnCard {
+                width: 100px;
+                padding: 10px;
+                border: none;
+                border-radius: 5px;
+                background-color: white;
+                font-size: 1.5em;
+                font-weight: 600;
+                box-shadow: 1px 0px 6px 6px rgba(116, 169, 210, 0.2) inset;
+            }
+    
+            .checkImg > img {
+                width: 30px;
+            }
+    
+        }
+    }
+}

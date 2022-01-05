@@ -1,0 +1,39 @@
+.headerContainer {
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    box-shadow: 0px -9px 10px -7px rgba(116, 169, 210, 0.6) inset;
+    background-color: rgb(223, 237, 250);
+
+    .contentHeader {
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+        .logo {
+            height: 80px;
+            margin-top: 10px;
+        }
+
+        .busketIcons {
+            display: flex;
+            margin: 10px 0;
+
+            .countGoods {
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                border: 1 px solid grey;
+                background-color: rgb(4, 0, 251);
+                text-align: center;
+                color: #ffffff;
+                font-weight: 600;
+            }
+
+            .bascket {
+                width: 80px;
+            }
+        }
+    }
+}
