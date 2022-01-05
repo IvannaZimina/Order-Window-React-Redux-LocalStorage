@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+# Task
+Create e wep-app with order window to buy some goods.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Stack
+### Backend
+The data were getting from (https://fakestoreapi.com/products/)
+### Frontend
+JavaScript, React, Redax, localStorag vai redux-persist, Sass (SCSS)
 
-## Available Scripts
+## Description
+There was created basic React-app with [Create React App](https://github.com/facebook/create-react-app).
+There were created two pages with the 'react-router-dom': products page, order page.
 
-In the project directory, you can run:
+On the main (product) page there were created cards of goods using SASS (SCSS) with functional 'BUY' buttons.
+In the Header component threre was implemented a Counter which is count of positions in order list.
+It changed after click on buttons 'BUY' without dublicate the positions in order.
 
-### `npm start`
+On the order page there was created a block of chosen positions with summary datas.
+There were implemented followings options in the order window using native JavaScript and Redux:
+1) click buttons to manually change count of items (+ \ -);
+2) function to auto change of amount while changing the count;
+3) delete button to delete the posiotion from store, localStorage and the order of course.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The Redux and localStorage via Redux-persist were used as storages for order's data.
+There were implemented the following transactions:
+- add position to store via 'BUY' buttons;
+- delete position from order in two ways (delete button and count of posiotion === 0)
+- change count and amount of item in store.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Views
 
-### `npm test`
+![image](https://user-images.githubusercontent.com/46706194/148299075-76d71f64-c5c2-40b8-9a0f-13d9c120d1b5.png)
+![image](https://user-images.githubusercontent.com/46706194/148299119-2ef45ca8-57a1-4a42-a7bf-00d976696880.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
