@@ -5,7 +5,7 @@ Create e web-app with order window to buy some goods.
 ### Backend
 The data were getting from (https://fakestoreapi.com/products/)
 ### Frontend
-JavaScript, React, Redax, localStorag via redux-persist, Sass (SCSS)
+JavaScript, React, Redux, localStorag via redux-persist, Sass (SCSS)
 
 ## Description
 There was created basic React-app with [Create React App](https://github.com/facebook/create-react-app).
