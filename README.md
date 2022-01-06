@@ -15,7 +15,7 @@ On the main (product) page there were created cards of goods using SASS (SCSS) w
 In the Header component there was implemented a Counter which is count of positions in order list.
 It changed after click on buttons 'BUY' without duplicate the positions in order.
 
-On the order page there was created a block of chosen positions with summary datas.
+On the order page there was created a block of chosen positions with summary data.
 There were implemented followings options in the order window using native JavaScript and Redux:
 1) click buttons to manually change count of items (+ \ -);
 2) function to auto change of amount while changing the count;
