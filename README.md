@@ -1,5 +1,5 @@
 # Task
-Create e wep-app with order window to buy some goods.
+Create e web-app with order window to buy some goods.
 
 ## Stack
 ### Backend
@@ -13,7 +13,7 @@ There were created two pages with the 'react-router-dom': products page, order p
 
 On the main (product) page there were created cards of goods using SASS (SCSS) with functional 'BUY' buttons.
 In the Header component there was implemented a Counter which is count of positions in order list.
-It changed after click on buttons 'BUY' without dublicate the positions in order.
+It changed after click on buttons 'BUY' without duplicate the positions in order.
 
 On the order page there was created a block of chosen positions with summary datas.
 There were implemented followings options in the order window using native JavaScript and Redux:
