@@ -12,50 +12,63 @@
         margin: 20px 30px;
         border: 1px solid rgb(234, 234, 235);
         padding: 10px;
-        box-shadow: 2px 6px 6px 4px rgba(34, 60, 80, 0.11);
+        box-shadow: 2px 5px 5px 4px rgba(34, 60, 80, 0.11);
 
-        h3 {
-            margin: 0;
+        &:hover {
+            box-shadow: 2px 5px 5px 4px rgba(51, 87, 114, 0.63);
         }
 
-        .titleCard {
-            height: 65px;
-        }
-
-        .imageCard {
-            height: 200px;
-
-            img {
-                width: 100px;
-                padding: 15% 0;
-                margin: 0 30%;
-            }
-        }
-
-        .priceCard {
-            margin: 5px 0;
-        }
-
-        .buyNav {
-            display: flex;
-            justify-content:space-between;
-            width: 150px;
-
-            .buyBtnCard {
-                width: 100px;
-                padding: 10px;
-                border: none;
-                border-radius: 5px;
-                background-color: white;
-                font-size: 1.5em;
-                font-weight: 600;
-                box-shadow: 1px 0px 6px 6px rgba(116, 169, 210, 0.2) inset;
+        .cardBtn {
+            border: none;
+            background-color: #ffffff00;
+    
+            .titleCard {
+                height: 65px;
+                margin: 0;
             }
     
-            .checkImg > img {
-                width: 30px;
+            .imageCard {
+                height: 200px;
+    
+                img {
+                    width: 100px;
+                    padding: 15% 0;
+                    margin: 0 30%;
+                }
+            }
+
+            .priceCard {
+                width: 100px;
+                margin: 0;
+                
             }
     
+            .buyNav {
+                display: flex;
+                justify-content:space-between;
+                width: 150px;
+    
+                .buyBtnCard {
+                    width: 100px;
+                    padding: 10px;
+                    border: none;
+                    border-radius: 5px;
+                    background-color: rgb(187, 227, 250);
+                    font-size: 1.5em;
+                    font-weight: 600;
+                    box-shadow: 1px 0px 6px 6px rgba(82, 125, 158, 0.322) inset;
+                
+                    &:hover {
+                        background-color: rgb(42, 84, 133);
+                        box-shadow: 1px 0px 6px 6px rgba(198, 226, 246, 0.2) inset;
+                        color: #ffffff;
+                    }
+                }
+        
+                .checkImg > img {
+                    width: 30px;
+                }
+            }
         }
     }
 }

@@ -18,14 +18,14 @@ function Header() {
 
         <div>
           <NavLink to="/">
-            <img src={logo} className={style.logo} alt="logo" />
+            <img src={logo} className={style.logo} alt="logo" title="Home page"/>
           </NavLink>
         </div>
 
         <div className={style.busketIcons}>
           <div className={style.countGoods}>{count.length}</div>
           <NavLink to="/order" >
-              <img src={bascket} className={style.bascket} alt="bascket" />
+              <img src={bascket} className={style.bascket} alt="bascket" title="Order page"/>
           </NavLink>
         </div>
 
