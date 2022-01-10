@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom';
 
 function Header() {
 
-  const count = useSelector(state => state.goods.item);
+  const count = useSelector(state => state.orderList.orderList);
 
   // тоже работает - возращает массив без дублей
   // const arr = count.filter((id, index) => count.indexOf(id) === index);

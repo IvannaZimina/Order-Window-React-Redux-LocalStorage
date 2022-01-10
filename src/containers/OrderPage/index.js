@@ -1,12 +1,11 @@
 import style from './style.module.scss';
 import { useDispatch, useSelector } from 'react-redux';
-import { useState } from 'react';
-import { addProductActionCreator, substractProductActionCreator, deleteProductActionCreator} from '../../store/actionCreators';
+import { addProductActionCreator, substractProductActionCreator, deleteProductActionCreator} from '../../store/orderAC';
 
 function OrderPage() {
 
   const dispatch = useDispatch();
-  const count = useSelector(state => state.goods.item);
+  const order = useSelector(state => state.orderList.orderList);
 
   const substractCount = (data) => {
 
@@ -45,12 +44,12 @@ function OrderPage() {
       deleteProductActionCreator(rmItem, dispatch)
   };
 
-  const cardinBusket = count.map((data) => (
+  const cardinBusket = order.map((data) => (
     <>
       <div className={style.cardLine}>
         <div className={style.cardImage}><img src={data.image} alt="" /></div>
         <div className={style.cardTitle}>{data.title}</div>
-        <div className={style.cardPrice}>{data.price}</div>
+        <div className={style.cardPrice}>{(data.price/100).toFixed(2)}</div>
 
         <div className={style.itemEditCount}>
           <button onClick={() => substractCount(data)}> - </button>
@@ -58,18 +57,18 @@ function OrderPage() {
           <button onClick={() => addCount(data)}> + </button>
         </div>
 
-        <div className={style.catdAmount}>{data.amount}</div>
+        <div className={style.catdAmount}>{(data.amount/100).toFixed(2)}</div>
 
         <button className={style.deleteCardLine} onClick={() => deleteItem(data)}>X</button>
       </div>
     </>
   ))
 
-  const totalCount = count.reduce( (acc, item) => {
+  const totalCount = order.reduce( (acc, item) => {
     return  acc += item.count;
   }, 0);
 
-  const totalAmount = count.reduce( (acc, item) => {
+  const totalAmount = order.reduce( (acc, item) => {
     return  acc += item.amount
   }, 0)
 
@@ -81,7 +80,7 @@ function OrderPage() {
       <div className={style.orderListContain}>{cardinBusket}</div>
 
       <div className={style.totalNumber}>Total count: {totalCount}</div>
-      <div className={style.totalNumber}>Total amount: {totalAmount} UAH</div>
+      <div className={style.totalNumber}>Total amount: {(totalAmount/100).toFixed(2)} UAH</div>
 
     </div>
   );
