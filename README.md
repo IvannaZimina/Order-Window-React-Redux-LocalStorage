@@ -26,6 +26,6 @@ Also, as a required parameter, the preload of the list of product was added. You
 
 ## Views
 
-![image](https://user-images.githubusercontent.com/46706194/148299075-76d71f64-c5c2-40b8-9a0f-13d9c120d1b5.png)
+![image](https://user-images.githubusercontent.com/46706194/148768179-8dc92f1a-979c-4325-8b71-18780b46c976.png)
 ![image](https://user-images.githubusercontent.com/46706194/148299119-2ef45ca8-57a1-4a42-a7bf-00d976696880.png)
 
