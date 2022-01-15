@@ -8,21 +8,24 @@ The data were getting from (https://fakestoreapi.com/products/)
 JavaScript, React, Redux, localStorage via redux-persist, Sass (SCSS)
 
 ## Description
-There was created basic React-app with Create React App. There were created two pages with the 'react-router-dom': products page, order page.
-On the main (product) page there were created cards of goods using SASS (SCSS) with functional 'BUY' buttons.
-In the Header component there was implemented a Counter which is count of positions in order list. It changed after click on buttons 'BUY' without duplicate the positions in order.
+A basic React-app was created with Create React App. The following pages were developed with the 'react-router-dom': products page, order page.
 
-On the order page there was created a block of chosen positions with summary data. There were implemented followings options in the order window using native JavaScript and Redux:
-1.	click buttons to manually change count of items (+ \ -);
-2.	function to auto change of amount while changing the count;
-3.	delete button to delete the position from store, localStorage and the order of course.
+On the main (product) page, were implemented cards of goods using SASS (SCSS) with functional 'BUY' buttons. In the Header component a Counter was implemented. It counts positions which were added to the order. It changes after click on button 'BUY' without duplicate the positions in order.
 
-The Redux store and localStorage via Redux-persist were used as storages for order's data. Local Storage automatically changes via redux store because of using redux-persist library. There were implemented the following transactions:
--	add position to store via 'BUY' buttons;
+On the order page, a block of chosen positions with summary data there was created.
+The followings options in the order window were implemented using native JavaScript and Redux:
+1)	click buttons to manually change count of items (+ \ -);
+2)	function to auto change of amount while changing the count;
+3)	delete button to delete the position from store, localStorage and the order of course.
+
+Local storage is synchronized with the redux-store via redux-persist library for managing order's data.
+The following functional options were implemented:
+-	add position to order via 'BUY' button from the main page;
 -	delete position from order in two ways (delete button and count of position === 0)
--	change count and amount of item in store.
+-	change count and amount of items in order.
 
 Also, as a required parameter, the preload of the list of product was added. You can see the gif with snail if the list is loading. If it takes more than one minute, because the work of api – please, update the page.
+
 
 ## Views
 
